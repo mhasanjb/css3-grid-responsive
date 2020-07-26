@@ -1,0 +1,126 @@
+  /* Basic */
+  .grid {
+    display: grid;
+  }
+
+  /* Offset */
+  .grid.offset-1-1 {
+    gap: 1em 1em;
+  }
+
+  .grid.col-offset-1 {
+    column-gap: 1rem;
+  }
+
+  .grid.row-offset-1 {
+    row-gap: 1rem;
+  }
+
+  /* Grid system (Basic: not responsive) */
+  @for $i from 1 through 12 {
+    .grid.col-#{$i} {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  /* 1fr (x)fr */
+  @for $i from 2 through 12 {
+  .grid.col-1-#{$i} {
+    grid-template-columns: 1fr #{$i}fr;
+  }
+}
+
+/* Media List */
+/* 
+  ## Device sizes
+  @media (min-width: 576px)  (xs) = extra small
+  @media (min-width: 768px)  (sm) = small
+  @media (min-width: 992px)  (md) = medium
+  @media (min-width: 1200px) (lg) = large
+  @media (min-width: 1400px) (xl) = extra large
+  @media (min-width: 1600px) (hg) = huge
+*/
+/* Doesn't Have Standard Size */
+
+/* ns = not standard */
+@mixin grid($name) {
+  @for $i from 1 through 12 {
+    .grid.col-#{$name}-#{$i} {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+  @for $i from 2 through 12 {
+    .grid.col-#{$name}-1-#{$i} {
+      grid-template-columns: 1fr #{$i}fr;
+    }
+  }
+}
+@media (min-width: 0px) {
+  @include grid(ns);
+}
+
+/* XS */
+@media (min-width: 576px) {
+  @include grid(xs);
+}
+
+/* SM */
+@media (min-width: 768px) {
+  @include grid(sm);
+}
+
+/* MD */
+@media (min-width: 992px) {
+  @include grid(md);
+}
+
+/* LG */
+@media (min-width: 1200px) {
+  @include grid(lg);
+}
+
+/* XL */
+@media (min-width: 1400px) {
+  @include grid(xl);
+}
+
+/* Huge = hg */
+@media (min-width: 1600px) {
+  @include grid(hg);
+}
+
+/* Hidden for specific device */
+@media (min-width: 0px) and (max-width:320px) {
+  .ns-hidden {
+    display: none;
+  }
+}
+@media (min-width: 321px) and (max-width: 576px){
+  .xs-hidden {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px){
+  .sm-hidden {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .md-hidden {
+    display: none;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px){
+  .lg-hidden {
+    display: none;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px){
+  .xl-hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 1401px){
+  .hg-hidden {
+    display: none;
+  }
+}
