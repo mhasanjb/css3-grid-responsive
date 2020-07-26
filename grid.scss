@@ -39,9 +39,6 @@
   @media (min-width: 1400px) (xl) = extra large
   @media (min-width: 1600px) (hg) = huge
 */
-/* Doesn't Have Standard Size */
-
-/* ns = not standard */
 @mixin grid($name) {
   @for $i from 1 through 12 {
     .grid.col-#{$name}-#{$i} {
@@ -54,6 +51,9 @@
     }
   }
 }
+
+/* Doesn't Have Standard Size */
+/* ns = not standard */
 @media (min-width: 0px) {
   @include grid(ns);
 }
