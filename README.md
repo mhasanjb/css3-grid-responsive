@@ -1,5 +1,6 @@
 # css3-grid-responsive
-Css3 Grid System - Responsive
+Css3 Grid System - Responsive   
+Based on css => display:grid
 
 # Media List
   @media (min-width: 0px)    (ns) = not standard    
