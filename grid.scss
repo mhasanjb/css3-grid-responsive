@@ -58,6 +58,11 @@
   @include grid(ns);
 }
 
+/* VS = very small */
+@media (min-width: 320px) {
+  @include grid(vs);
+}
+
 /* XS */
 @media (min-width: 576px) {
   @include grid(xs);
