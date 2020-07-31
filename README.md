@@ -39,4 +39,18 @@ Css3 Grid System - Responsive
   <div>Item2</div>
   <div>Item3</div>
 </div>
+
+<!-- Offset Classes -->
+<div class="offset-1-1">   (gap:1rem)Col:1rem & Row:1rem </div>
+<div class="col-offset-1"> (column-gap: 1rem)Col:1rem    </div>
+<div class="row-offset-1"> (row-gap: 1rem)Row:1rem       </div>
+
+<!-- Hidden for specific device -->
+<div class="ns-hidden"></div>
+<div class="xs-hidden"></div>
+<div class="sm-hidden"></div>
+<div class="md-hidden"></div>
+<div class="lg-hidden"></div>
+<div class="xl-hidden"></div>
+<div class="hg-hidden"></div>
 ```
