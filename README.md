@@ -10,7 +10,6 @@ Css3 Grid System - Responsive
   @media (min-width: 1200px) (lg) = large    
   @media (min-width: 1400px) (xl) = extra large    
   @media (min-width: 1600px) (hg) = huge    
-*/
  # Usage 
 ```html
 <!-- Example for xs (ns,vs,xs,sm,md,lg,xl,hg)-->
