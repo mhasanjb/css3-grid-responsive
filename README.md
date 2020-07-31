@@ -2,14 +2,14 @@
 Css3 Grid System - Responsive
 
 # Media List
-  @media (min-width: 0px)    (ns) = not standard
-  @media (min-width: 320px)  (vs) = very small
-  @media (min-width: 576px)  (xs) = extra small
-  @media (min-width: 768px)  (sm) = small
-  @media (min-width: 992px)  (md) = medium
-  @media (min-width: 1200px) (lg) = large
-  @media (min-width: 1400px) (xl) = extra large
-  @media (min-width: 1600px) (hg) = huge
+  @media (min-width: 0px)    (ns) = not standard    
+  @media (min-width: 320px)  (vs) = very small    
+  @media (min-width: 576px)  (xs) = extra small    
+  @media (min-width: 768px)  (sm) = small    
+  @media (min-width: 992px)  (md) = medium    
+  @media (min-width: 1200px) (lg) = large    
+  @media (min-width: 1400px) (xl) = extra large    
+  @media (min-width: 1600px) (hg) = huge    
 */
  # Usage 
 ```html
